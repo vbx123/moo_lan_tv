@@ -34,13 +34,13 @@ jobs:
       run: ./gradlew :mobile:assembleDebug
 
     - name: Upload TV Launcher APK
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
-        name: moo_lan_tv_TV_Launcher.apk
+        name: moo_lan_tv_TV_Launcher
         path: tv/build/outputs/apk/debug/*.apk
 
     - name: Upload Mobile Companion APK
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
-        name: moo_lan_tv_Mobile_Remote.apk
+        name: moo_lan_tv_Mobile_Remote
         path: mobile/build/outputs/apk/debug/*.apk
