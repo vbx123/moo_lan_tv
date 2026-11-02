@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#121212"
+    android:padding="20dp">
+
+    <!-- Header info with Dates -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@drawable/gold_border_tile"
+        android:padding="12dp">
+
+        <TextView
+            android:id="@+id/tvGregorian"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#FFD700"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tvHijri"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <!-- Buttons row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/btnInputsDialog"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text="مداخل الشاشة (HDMI / TV)"
+            android:background="@drawable/gold_border_tile"
+            android:textColor="#FFD700"
+            android:layout_marginEnd="10dp" />
+
+        <Button
+            android:id="@+id/btnQuranSection"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text="القرآن الكريم والإذاعات"
+            android:background="@drawable/gold_border_tile"
+            android:textColor="#FFD700"
+            android:layout_marginEnd="10dp" />
+
+        <Button
+            android:id="@+id/btnQrRemote"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text="ربط ريموت الهاتف QR"
+            android:background="@drawable/gold_border_tile"
+            android:textColor="#FFD700" />
+    </LinearLayout>
+</LinearLayout>
