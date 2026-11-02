@@ -1,0 +1,3 @@
+<resources>
+    <style name="Theme.NasimMobile" parent="Theme.MaterialComponents.DayNight.NoActionBar" />
+</resources>
